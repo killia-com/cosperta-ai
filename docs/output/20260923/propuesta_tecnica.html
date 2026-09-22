@@ -5,13 +5,13 @@
   <title>Propuesta Técnica — CoSperta.AI</title>
   <link rel="stylesheet" href="killia-brand.css">
   <style>
-    body { font-size: 9pt; line-height: 1.35; }
-    h2 { font-size: 11pt; margin: 12px 0 6px 0; }
+    body { font-size: 9pt; line-height: 1.4; }
+    h2 { font-size: 11pt; margin: 14px 0 6px 0; border-bottom: 2px solid var(--k-black); padding-bottom: 3px; }
     h3 { font-size: 9pt; margin: 8px 0 4px 0; }
     .card { padding: 10px 12px; margin-bottom: 6px; }
-    .card p, .card li { font-size: 7.5pt; }
+    .card p, .card li { font-size: 8pt; }
     ul.clean li { padding: 2px 0 2px 14px; }
-    ul.clean li::before { top: 7px; width: 5px; height: 5px; }
+    ul.clean li::before { top: 8px; width: 5px; height: 5px; }
     .highlight { padding: 8px 12px; margin: 8px 0; }
     .grid-2 { gap: 6px; }
     .grid-3 { gap: 6px; }
@@ -22,9 +22,8 @@
     .title-block h1 { font-size: 14pt; }
     .header { margin-bottom: 12px; padding-bottom: 8px; }
     .timeline { font-size: 6.5pt; }
-    .mb-4 { margin-bottom: 4px; }
     .mb-6 { margin-bottom: 6px; }
-    .mt-4 { margin-top: 4px; }
+    .page-break { page-break-before: always; }
   </style>
 </head>
 <body>
@@ -32,7 +31,7 @@
   <!-- HEADER -->
   <div class="header">
     <div class="header-left">
-      <img src="data:image/png;base64,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" style="height:28px;">
+      <img src="data:image/png;base64,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" style="height:30px;">
       <span class="text-small text-muted">Killia Technologies S.L. — B66998592</span>
     </div>
     <div class="header-logos">
@@ -50,9 +49,11 @@
   <!-- 1. COMPRENSIÓN DEL PROYECTO -->
   <h2>1. Comprensión del Proyecto</h2>
 
-  <p class="mb-6">CoSperta.AI es una plataforma de consultoría energética digital que analiza facturas y contratos de energía, compara ofertas del mercado y recomienda la opción óptima mediante IA explicable. Está dirigida a hogares, pymes y asesorías energéticas.</p>
+  <p class="mb-6">CoSperta.AI es una plataforma de consultoría energética digital, independiente y automatizada que analiza facturas y contratos de energía, compara las ofertas del mercado y recomienda la opción óptima mediante inteligencia artificial explicable. Está dirigida a hogares, pymes y asesorías energéticas.</p>
 
-  <div class="grid-2">
+  <h3>Enfoque técnico por paquete de trabajo</h3>
+
+  <div class="grid-2 mb-6">
     <div class="card">
       <h3>PT01 — Arquitectura</h3>
       <ul class="clean">
@@ -64,82 +65,107 @@
     <div class="card">
       <h3>PT02 — Motor IA (Core)</h3>
       <ul class="clean">
-        <li>ML consumo (scikit-learn, SHAP)</li>
-        <li>NLP contractual (Transformers)</li>
-        <li>Fuentes CNMC, OMIE, REE-ESIOS</li>
+        <li>ML consumo: clustering, predicción, contextual bandits</li>
+        <li>NLP contractual: extracción de cláusulas</li>
+        <li>Fuentes CNMC, OMIE, REE-ESIOS + SHAP</li>
       </ul>
     </div>
     <div class="card">
       <h3>PT03 — OCR de Facturas</h3>
       <ul class="clean">
         <li>PaddleOCR + LayoutLMv3</li>
-        <li>Pipeline automatizado + LLM</li>
+        <li>Pipeline: preprocesado → detección → reconocimiento → postprocesado LLM</li>
       </ul>
     </div>
     <div class="card">
       <h3>PT04 — Dashboard BI</h3>
       <ul class="clean">
         <li>APIs personalización y alertas</li>
-        <li>ClickHouse + Redis</li>
+        <li>Vista agregada asesorías, ClickHouse + Redis</li>
       </ul>
     </div>
     <div class="card">
       <h3>PT05 — Chatbot</h3>
       <ul class="clean">
-        <li>LangChain + RAG + WhatsApp API</li>
-        <li>NLP dominio energético</li>
+        <li>LangChain + RAG + WhatsApp Business API</li>
+        <li>NLP entrenado en dominio energético</li>
       </ul>
     </div>
     <div class="card">
       <h3>PT06-PT07 — Pruebas y Despliegue</h3>
       <ul class="clean">
-        <li>Planes integrales + optimización</li>
-        <li>Despliegue en producción</li>
+        <li>Planes integrales + optimización modelos</li>
+        <li>Despliegue producción + documentación</li>
       </ul>
     </div>
   </div>
 
+  <!-- PAGE BREAK -->
+  <div class="page-break"></div>
+
   <!-- 2. METODOLOGÍA -->
-  <h2>2. Metodología de Trabajo</h2>
+  <h2>2. Metodología de Trabajo y Control de Calidad</h2>
 
   <div class="highlight mb-6">
-    <strong>Enjambre de agentes IA:</strong> OpenCode + Hermes ejecutan código, tests y documentación en paralelo. Miquel Colomer supervisa arquitectura y calidad. Resultado: 3-5x más rápido que desarrollo tradicional, con reducción de costes del 40-50%.
+    <strong>Diferenciador clave — Enjambre de Agentes IA:</strong> Killia no aplica desarrollo tradicional. Utilizamos un enjambre de agentes IA (OpenCode + Hermes) que ejecutan tareas de código, tests y documentación en paralelo, mientras Miquel Colomer supervisa la arquitectura, toma decisiones de diseño y asegura la calidad. Resultado: 3-5x más rápido que desarrollo tradicional, con reducción de costes del 40-50% manteniendo estándares de calidad enterprise.
   </div>
+
+  <h3>ómo funciona el enjambre</h3>
 
   <div class="grid-3 mb-6">
     <div class="card card-gray">
       <h3>Agentes de Código</h3>
-      <p>Python/FastAPI + tests automáticos</p>
+      <p class="text-small">Generan implementación Python/FastAPI siguiendo especificaciones detalladas. Crean tests unitarios automáticos. Siguen patrones de código predefinidos y buenas prácticas.</p>
     </div>
     <div class="card card-gray">
       <h3>Agentes de Validación</h3>
-      <p>Tests, regresiones, cobertura CI</p>
+      <p class="text-small">Ejecutan suites de tests, detectan regresiones, revisan cobertura de código. Mantienen CI continuo con integración automática.</p>
     </div>
     <div class="card card-gray">
       <h3>Supervisión Humana</h3>
-      <p>Arquitectura, calidad, coherencia</p>
+      <p class="text-small">Miquel Colomer decide arquitectura, revisa calidad del código resultante, asegura coherencia con el proyecto global y toma decisiones de diseño críticas.</p>
     </div>
   </div>
 
-  <p class="mb-6"><strong>Control de calidad:</strong> Scrum (sprints 2-4 sem), TDD, CI/CD, Git, revisión por pares. <strong>Seguridad:</strong> RGPD, AES-256, TLS 1.3, anonimización datos.</p>
+  <p class="mb-6"><strong>Ventajas cuantificables:</strong> Un solo desarrollador experimentado, potenciado con enjambre de agentes IA, alcanza la productividad de un equipo de 3-4 ingenieros. Los agentes ejecutan código repetitivo, generan tests, documentan y revisan, mientras el humano se enfoca en decisiones de arquitectura y diseño de negocio.</p>
 
-  <!-- 3. LICENCIAS Y PLANIFICACIÓN -->
-  <h2>3. Componentes de terceros y Planificación</h2>
+  <h3>Control de calidad</h3>
+  <ul class="clean mb-6">
+    <li><strong>Scrum:</strong> Sprints 2-4 semanas, backlog compartido con CoRegistros</li>
+    <li><strong>TDD + CI/CD:</strong> Tests antes que código, integración continua automatizada</li>
+    <li><strong>Git:</strong> Control de versiones, revisión de código por pares (agente + humano)</li>
+    <li><strong>Validación modelos:</strong> Métricas documentadas (precisión, recall, F1), validación cruzada</li>
+  </ul>
 
-  <p class="text-small text-muted mb-4"><strong>Licencias (ap. 13.3):</strong> PaddleOCR (Apache 2.0), LayoutLMv3 (MIT), LangChain (MIT), scikit-learn (BSD), FastAPI (MIT), ClickHouse (Apache 2.0), Redis (BSD), Transformers (Apache 2.0), SHAP (MIT), PuLP (BSD), FAISS (MIT). Todas compatibles con explotación comercial.</p>
+  <h3>Seguridad</h3>
+  <ul class="clean mb-6">
+    <li>RGPD desde el diseño, anonimización datos personales</li>
+    <li>AES-256 reposo, TLS 1.3 tránsito, gestión segura de secretos</li>
+    <li>Control accesos por roles, auditabilidad completa de decisiones IA</li>
+  </ul>
 
-  <div class="timeline" style="grid-template-columns: 90px repeat(4, 1fr);">
+  <!-- PAGE BREAK -->
+  <div class="page-break"></div>
+
+  <!-- 3. PLANIFICACIÓN -->
+  <h2>3. Planificación</h2>
+
+  <div class="highlight mb-6">
+    <strong>Planificación acelerada con enjambre de agentes IA:</strong> Desarrollo 3-5x más rápido que metodología tradicional. Los agentes ejecutan código, tests y documentación en paralelo, permitiendo fases superpuestas y entregas iterativas. Cada sprint de 2 semanas genera un incremento funcional verificable.
+  </div>
+
+  <div class="timeline" style="grid-template-columns: 100px repeat(4, 1fr);">
     <div class="timeline-header">Paquete</div>
     <div class="timeline-header">M1</div>
     <div class="timeline-header">M2</div>
     <div class="timeline-header">M3</div>
     <div class="timeline-header">M4</div>
 
-    <div class="timeline-label">PT01 Arq.</div>
+    <div class="timeline-label">PT01 Arquitectura</div>
     <div class="timeline-bar" style="grid-column: 2/3;"></div>
     <div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div>
 
-    <div class="timeline-label">PT02 Core</div>
+    <div class="timeline-label">PT02 Core IA</div>
     <div class="timeline-cell"></div>
     <div class="timeline-bar" style="grid-column: 3/4;"></div>
     <div class="timeline-cell"></div><div class="timeline-cell"></div>
@@ -149,59 +175,159 @@
     <div class="timeline-bar" style="grid-column: 3/4;"></div>
     <div class="timeline-cell"></div><div class="timeline-cell"></div>
 
-    <div class="timeline-label">PT04 Dash</div>
+    <div class="timeline-label">PT04 Dashboard</div>
     <div class="timeline-cell"></div><div class="timeline-cell"></div>
     <div class="timeline-bar" style="grid-column: 4/5;"></div>
     <div class="timeline-cell"></div>
 
-    <div class="timeline-label">PT05 Bot</div>
+    <div class="timeline-label">PT05 Chatbot</div>
     <div class="timeline-cell"></div><div class="timeline-cell"></div>
     <div class="timeline-bar" style="grid-column: 4/5;"></div>
     <div class="timeline-cell"></div>
 
-    <div class="timeline-label">PT06 Prue.</div>
+    <div class="timeline-label">PT06 Pruebas</div>
     <div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div>
     <div class="timeline-bar" style="grid-column: 5/5;"></div>
 
-    <div class="timeline-label">PT07 Desp.</div>
+    <div class="timeline-label">PT07 Despliegue</div>
     <div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div>
     <div class="timeline-bar" style="grid-column: 5/5;"></div>
   </div>
 
-  <p class="text-small"><strong>Hitos:</strong> Sem 1-2: Arquitectura + primer sprint · Mes 1-2: Core IA + OCR · Mes 3: Dashboard + Chatbot · Mes 4: Pruebas + Despliegue</p>
+  <h3>Hitos principales</h3>
+  <ul class="clean mb-6">
+    <li><strong>Semana 1-2:</strong> Arquitectura aprobada, stack tecnológico definido, primer sprint funcional con prototipo base</li>
+    <li><strong>Mes 1-2:</strong> Core IA funcional (modelos ML y NLP), OCR entrenado y optimizado, primeros prototipos integrados</li>
+    <li><strong>Mes 3:</strong> Dashboard BI y chatbot integrados, pruebas iniciales de integración</li>
+    <li><strong>Mes 4:</strong> Pruebas integrales, optimización de rendimiento, despliegue en producción</li>
+  </ul>
 
-  <!-- 4. EQUIPO Y REFERENCIAS -->
-  <h2>4. Equipo y Referencias</h2>
+  <p class="text-small text-muted"><strong>Nota:</strong> Con agentes IA, las fases se superponen completamente. El primer sprint (semana 1-2) genera un incremento funcional verificable que permite validación temprana con CoRegistros.</p>
+
+  <!-- PAGE BREAK -->
+  <div class="page-break"></div>
+
+  <!-- 4. EQUIPO -->
+  <h2>4. Equipo Propuesto</h2>
 
   <table class="mb-6">
-    <tr><th>Nombre</th><th>Rol</th><th>Formación</th><th>Experiencia</th><th>Dedicación</th></tr>
-    <tr><td><strong>Miquel Colomer Salas</strong></td><td>Director Técnico / Arquitecto IA</td><td>Universitat de Barcelona</td><td>15+ años</td><td>100%</td></tr>
+    <tr>
+      <th>Nombre</th>
+      <th>Rol / Perfil</th>
+      <th>Formación</th>
+      <th>Experiencia</th>
+      <th>Dedicación</th>
+    </tr>
+    <tr>
+      <td><strong>Miquel Colomer Salas</strong></td>
+      <td>Director Técnico / Arquitecto de Soluciones IA</td>
+      <td>Universitat de Barcelona</td>
+      <td>15+ años</td>
+      <td>100%</td>
+    </tr>
   </table>
 
   <div class="highlight mb-6">
-    <strong>Capacidad ampliada:</strong> 1 desarrollador + enjambre IA = productividad de 3-4 ingenieros.
+    <strong>Capacidad ampliada por enjambre de agentes IA:</strong> Un solo desarrollador experimentado, potenciado con agentes OpenCode y Hermes, alcanza la productividad de un equipo de 3-4 ingenieros. Los agentes ejecutan código, tests y documentación mientras Miquel supervisa la arquitectura, toma decisiones de diseño y asegura la calidad del proyecto.
   </div>
 
+  <h3>Competencias clave</h3>
   <div class="grid-2 mb-6">
     <div class="card">
-      <h3>Ref. 1: uProc.io (2013-presente)</h3>
-      <p>Plataforma integral de datos: OCR, IA, chatbot, SQL. Desarrollada 100% con agentes IA. Mismo alcance que CoSperta.AI.</p>
+      <h3>Desarrollo Backend y APIs</h3>
+      <p class="text-small">Python, FastAPI, APIs REST, microservicios, bases de datos (MySQL, ClickHouse, Redis), orquestación de servicios.</p>
     </div>
     <div class="card">
-      <h3>Ref. 2: Killia (2024-presente)</h3>
-      <p>Procesos operativos con IA: validación documental, handoffs, reporting. Automatización con agentes.</p>
+      <h3>IA y Machine Learning</h3>
+      <p class="text-small">scikit-learn, Transformers, LangChain, RAG, modelos predictivos, NLP, contextual bandits, explicabilidad (SHAP).</p>
+    </div>
+    <div class="card">
+      <h3>OCR y Procesamiento Documental</h3>
+      <p class="text-small">PaddleOCR, LayoutLMv3, Tesseract, pdfplumber, parsing semántico, pipelines de extracción automatizados.</p>
+    </div>
+    <div class="card">
+      <h3>Arquitectura y DevOps</h3>
+      <p class="text-small">Microservicios, CI/CD, Docker, Git, TDD, Scrum, monitorización, seguridad de aplicaciones.</p>
     </div>
   </div>
 
-  <!-- 5. OBJETIVOS -->
-  <h2>5. Contribución a Objetivos de Referencia</h2>
+  <!-- PAGE BREAK -->
+  <div class="page-break"></div>
+
+  <!-- 5. REFERENCIAS -->
+  <h2>5. Referencias de Proyectos Similares</h2>
+
+  <h3>Referencia 1: uProc.io — Plataforma Integral de Datos</h3>
+  <div class="card mb-6">
+    <div class="grid-2">
+      <div>
+        <p class="text-small"><strong>Cliente:</strong> uProc LLC</p>
+        <p class="text-small"><strong>Periodo:</strong> 2013 — presente (11+ años)</p>
+        <p class="text-small"><strong>Alcance:</strong> Desarrollo integral interno multidisciplinar</p>
+      </div>
+      <div>
+        <p class="text-small"><strong>Capacidades implementadas:</strong></p>
+        <ul class="clean">
+          <li>OCR y extracción de datos de documentos</li>
+          <li>Modelos IA de procesamiento y clasificación</li>
+          <li>Chatbot y capacidades conversacionales</li>
+          <li>Consultas SQL y gestión de bases de datos</li>
+          <li>Procesamiento de datos a escala</li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-small text-muted" style="margin-top:8px"><strong>Relevancia:</strong> Mismo alcance técnico que CoSperta.AI (OCR, NLP, chatbot, datos). Desarrollada 100% con enjambre de agentes IA. Productividad equivalente a equipo de 3-4 personas.</p>
+  </div>
+
+  <h3>Referencia 2: Killia — Procesos Operativos con IA</h3>
+  <div class="card mb-6">
+    <div class="grid-2">
+      <div>
+        <p class="text-small"><strong>Cliente:</strong> Diversos sectores</p>
+        <p class="text-small"><strong>Periodo:</strong> 2024 — presente</p>
+        <p class="text-small"><strong>Alcance:</strong> Rediseño de procesos con automatización e IA</p>
+      </div>
+      <div>
+        <p class="text-small"><strong>Capacidades implementadas:</strong></p>
+        <ul class="clean">
+          <li>Validación documental con excepciones</li>
+          <li>Handoffs entre equipos con trazabilidad</li>
+          <li>Reporting y consolidación operativa</li>
+          <li>Automatización con agentes IA</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. OBJETIVOS -->
+  <h2>6. Contribución a Objetivos de Referencia</h2>
 
   <table>
-    <tr><th>Objetivo</th><th>Meta</th><th>Contribución Killia</th></tr>
-    <tr><td>Precisión OCR</td><td>≥ 97%</td><td>PaddleOCR + LayoutLMv3 + postprocesado semántico</td></tr>
-    <tr><td>F1 recomendador</td><td>≥ 0,80</td><td>scikit-learn + contextual bandits + SHAP</td></tr>
-    <tr><td>FCR chatbot</td><td>≥ 70%</td><td>LangChain + RAG dominio energético + WhatsApp</td></tr>
-    <tr><td>Disponibilidad</td><td>100%</td><td>Microservicios FastAPI + CI/CD + monitorización</td></tr>
+    <tr>
+      <th>Objetivo</th>
+      <th>Meta</th>
+      <th>Contribución Killia</th>
+    </tr>
+    <tr>
+      <td>Precisión OCR en campos críticos</td>
+      <td>≥ 97%</td>
+      <td>Experiencia en uProc con PaddleOCR + LayoutLMv3. Pipeline de postprocesado semántico con LLM. Validación cruzada.</td>
+    </tr>
+    <tr>
+      <td>F1 del recomendador (matching oferta-perfil)</td>
+      <td>≥ 0,80</td>
+      <td>Modelos ML con scikit-learn. Contextual bandits para recomendación. Explicabilidad con SHAP.</td>
+    </tr>
+    <tr>
+      <td>Resolución en primer contacto (FCR) del chatbot</td>
+      <td>≥ 70%</td>
+      <td>LangChain + RAG entrenado en dominio energético. Integración WhatsApp Business API. NLP especializado.</td>
+    </tr>
+    <tr>
+      <td>Plataforma 100% en línea</td>
+      <td>100%</td>
+      <td>Arquitectura de microservicios con FastAPI. CI/CD automatizado. Monitorización continua.</td>
+    </tr>
   </table>
 
   <!-- FIRMA -->
