@@ -1,0 +1,610 @@
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+PLIEGO DE CONDICIONES PARA LA SOLICITUD DE OFERTAS
+Subcontratación de servicios de ingeniería de soTware e inteligencia arWficial (desarrollo, Machine
+Learning, NLP, visión por computador, ingeniería de datos, QA y DevOps) para el proyecto
+CoSperta.AI
+Referencia del procedimiento: COSPERTA-SUB-01/2026
+1. EnGdad contratante y contacto
+La enWdad contratante es COREGISTROS, S.L.U. (en adelante, «CoRegistros»), con NIF B65146078 y domicilio en
+calle parís, 186 SA 08036 Barcelona beneficiaria de la ayuda concedida por Red.es para la ejecución del proyecto
+CoSperta.AI.
+2. Marco de la ayuda y normaGva aplicable
+Los servicios objeto de este pliego forman parte de un proyecto de desarrollo experimental cofinanciado por la
+Unión Europea a través del FEDER y concedido por Red.es. En consecuencia, el procedimiento de selección, la
+contratación, la ejecución, la facturación y el pago están sujetos, entre otras, a las siguientes normas:
+• Orden ECE/1301/2019, de 17 de diciembre, por la que se aprueban las bases reguladoras de las ayudas de
+Red.es, modificada por la Orden ETD/857/2021, de 28 de julio (en adelante, «Bases Reguladoras»), en
+parWcular sus ariculos 7 (Subcontrataciones) y 8 (Gastos subvencionables).
+• Resolución de Red.es de 22 de julio de 2025 por la que se convocan las ayudas C003/25-ED CV6 (en
+adelante, «Convocatoria»), en parWcular su apartado sexto y sus Anexos II, IV y VI.
+• Ley 38/2003, de 17 de noviembre, General de Subvenciones (en adelante, «LGS»), ariculos 29
+(subcontratación) y 31 (gastos subvencionables y solicitud de tres ofertas), y su Reglamento, aprobado por
+el Real Decreto 887/2006.
+EnGdad contratante COREGISTROS, S.L.U. — NIF B65146078
+Proyecto CoSperta.AI
+Programa de ayudas Convocatoria de ayudas 2025 desWnadas a proyectos de invesWgación y desarrollo
+en Inteligencia ArWficial y otras tecnologías duales y su integración en las cadenas
+de valor (C003/25-ED CV6), de la enWdad pública empresarial Red.es, M.P.
+Nº de expediente 2025/0325/00287755
+Cofinanciación Fondo Europeo de Desarrollo Regional (FEDER), periodo 2021-2027. Programa
+Plurirregional de España, ObjeWvo PolíWco 1 «Una Europa más compeWWva e
+inteligente», ObjeWvo Específico 1.2.
+Lugar de ejecución del proyecto Barcelona (Cataluña)
+Fecha de emisión del pliego 22/09/2026
+Fecha límite de presentación de
+ofertas
+09/10/2026, a las 23:59 h
+Persona de contacto Xavier Carreras — CEO
+Correo electrónico xcarreras@coregistros.com
+Teléfono +34 936 112 173
+Pliego COSPERTA-SUB-01/2026 — Página de1 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+• Reglamento (UE) 2021/1060 (Disposiciones Comunes) y Reglamento (UE) 2021/1058 (FEDER), así como la
+Orden HFP/1414/2023 sobre gastos subvencionables del FEDER 2021-2027.
+• Guía de Ejecución y JusWficación de la Ayuda de la Convocatoria C003/25-ED CV6, publicada por Red.es.
+Este procedimiento se realiza en cumplimiento del ariculo 31.3 de la LGS, del ariculo 8.5.e) de las Bases
+Reguladoras y del Anexo IV de la Convocatoria, que exigen solicitar como mínimo tres ofertas de proveedores
+diferentes, comparables entre sí, con carácter previo a la contratación del servicio.
+3. Objeto, necesidad y alcance
+3.1. Objeto y presupuesto máximo de licitación
+El objeto del procedimiento es la contratación de los servicios de ingeniería de soTware e inteligencia arWficial
+para el proyecto CoSperta.AI (expediente 2025/0325/00287755), abarcando los perfiles de ingeniería descritos
+en la Memoria Aprobada por Red.es.
+Presupuesto Máximo de Licitación: El tope económico máximo para la totalidad de los servicios licitados es de
+132.680,00 € (IVA excluido).
+• Reglas económicas obligatorias:
+1. Exclusión automáGca: Toda oferta económica que supere los 132.680,00 € (excl. IVA) quedará
+automáWcamente excluida.
+2. Límite para autónomos: Si el ofertante es trabajador autónomo, la tarifa máxima
+subvencionable será de 50,00 €/hora (Anexo II.3.a de la Convocatoria).
+3.2. Descripción del proyecto
+CoSperta.AI es una plataforma de consultoría energéWca digital, independiente y automaWzada que analiza
+facturas y contratos de energía, compara las ofertas del mercado y recomienda la opción ópWma mediante
+inteligencia arWficial explicable, dirigida a hogares, pymes y asesorías energéWcas. Se arWcula en tres pilares
+tecnológicos:
+• Comprensión automaGzada de datos: OCR basado en aprendizaje profundo para extraer datos de facturas
+(PDF o imagen) y NLP para analizar contratos y ofertas (permanencias, servicios adicionales, costes
+ocultos).
+• Motor de recomendación inteligente: perfilado de consumo, recomendación híbrida y opWmización
+mulWobjeWvo con reentrenamiento conWnuo.
+• Interacción y asesoramiento: dashboard de Business Intelligence y chatbot inteligente de acceso público
+24/7.
+El proyecto se organiza en siete paquetes de trabajo (PT01 a PT07) con metodología ágil (Scrum), Wpologías de
+desarrollo experimental de creación de protoWpo, realización de pilotos y ensayo y validación.
+3.3. Necesidad de la subcontratación
+CoRegistros aporta con personal propio la dirección del proyecto, la definición de requisitos, el diseño de los
+modelos (Data ScienWst), la validación, la seguridad, los aspectos legales y las pruebas con usuarios. La
+implementación técnica especializada descrita en el apartado 4 requiere perfiles de ingeniería de los que
+CoRegistros no dispone en planWlla, por lo que la Memoria del Proyecto la asigna a medios subcontratados. Las
+tareas subcontratadas están diferenciadas de las realizadas por el personal propio.
+Pliego COSPERTA-SUB-01/2026 — Página de2 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+3.4. Exclusiones
+Quedan expresamente excluidos del objeto de este pliego, por ser objeto de otro procedimiento o ejecutarse con
+medios propios de CoRegistros, Cualquier tarea o paquete de trabajo que no figure expresamente en el apartado
+4.
+4. Descripción de los servicios por paquete de trabajo
+Las tareas y entregables siguientes corresponden a los idenWficados en la Memoria del Proyecto. Los periodos
+indicados son los previstos en dicha Memoria y Wenen carácter orientaWvo; el ofertante presentará su propia
+planificación (apartado 9).
+ID Tarea Descripción Periodo (Memoria) Entregable
+PT1.T6 Diseño de arquitectura Diseño técnico de la arquitectura de
+soTware (microservicios, datos,
+seguridad) y definición de
+componentes.
+2 meses PT1.E3
+PT1.T7 Selección de
+tecnologías y
+herramientas
+Evaluación y selección de
+frameworks, librerías y herramientas
+de desarrollo.
+2 meses PT1.E3
+PT02 — Motor de procesamiento y análisis de datos (Core IA)
+PT2.T2 Modelos ML para
+análisis de consumo
+Implementación de modelos
+predicWvos y de clustering para
+idenWficar patrones de consumo
+energéWco.
+3 meses PT2.E1
+PT2.T3 Módulos NLP para
+análisis contractual
+Componentes de PLN para extracción
+de cláusulas y condiciones de
+contratos y ofertas.
+3 meses PT2.E1
+PT2.T4 Integración de fuentes
+de datos
+Conexión y normalización de datos
+externos (CNMC, OMIE, REE-ESIOS) y
+fuentes internas.
+3 meses PT2.E1 / PT2.E2
+PT03 — Plataforma de análisis de facturas (OCR)
+PT3.T3 Entrenamiento y
+opWmización OCR
+Ajuste y opWmización de modelos
+OCR con técnicas de aprendizaje
+profundo sobre facturas energéWcas.
+3 meses PT3.E2
+PT3.T4 Pipeline de extracción
+de datos
+Flujo automaWzado de preprocesado,
+detección, reconocimiento y
+postprocesado/validación de
+facturas.
+3 meses PT3.E3
+PT04 — Dashboard de BI (solo backend)
+PT4.T3 Personalización y
+alertas (backend)
+APIs y lógica de negocio de alertas
+personalizadas de renovación y
+cambios de tarifa.
+3 meses PT4.E3
+PT4.T4 Vista agregada
+asesorías (backend)
+APIs y lógica de agregación de datos
+para la gesWón de carteras de
+clientes por asesorías.
+3 meses PT4.E2
+PT05 — Chatbot inteligente
+PT5.T2 Motor de diálogo Implementación del motor
+conversacional para interacción en
+Wempo real (web y WhatsApp
+Business).
+3 meses PT5.E1
+Pliego COSPERTA-SUB-01/2026 — Página de3 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+4.1. Entregables
+El adjudicatario elaborará o contribuirá a los siguientes entregables de la Memoria del Proyecto, en la parte
+correspondiente a las tareas subcontratadas: PT1.E3 Diagrama de arquitectura y tecnologías seleccionadas;
+PT2.E1 Repositorio de código con algoritmos ML y NLP; PT2.E2 Dataset integrado y anonimizado (integración de
+fuentes); PT3.E2 Modelo OCR entrenado y opWmizado (código y pesos); PT3.E3 Pipeline de extracción
+desplegado; PT4.E2 y PT4.E3 (componentes backend); PT5.E1 Motor de diálogo y documentación de su API;
+PT5.E2 Modelos NLP del chatbot entrenados; PT5.E3 Integración del chatbot en la plataforma; PT6.E1 Plan
+integral de pruebas; aportaciones técnicas a PT6.E2; PT7.E1 Entorno de producción configurado; PT7.E2
+Plataforma CoSperta.AI en producción.
+Todo el código fuente se entregará en el repositorio Git de CoRegistros, con historial de commits, documentación
+técnica y de despliegue, y pruebas automaWzadas.
+5. Requisitos técnicos
+5.1. Arquitectura y tecnologías de referencia
+La oferta deberá ser compaWble con la arquitectura prevista en la Memoria del Proyecto. Cualquier alternaWva
+deberá jusWficarse técnicamente.
+PT5.T3 Entrenamiento de
+modelos NLP del
+chatbot
+Entrenamiento y adaptación de
+modelos NLP al dominio energéWco
+(RAG).
+3 meses PT5.E2
+PT5.T4 Integración del chatbot
+con el Core IA
+Conexión con el motor de
+recomendación y los módulos de
+datos.
+2 meses PT5.E3
+PT06 — Pruebas integrales y opGmización
+PT6.T1 Diseño de planes de
+prueba integrales
+Planes de prueba funcionales, de
+integración, de rendimiento y de
+seguridad.
+1 mes PT6.E1
+PT6.T3 Apoyo a pruebas de
+rendimiento y
+escalabilidad
+Ejecución técnica de pruebas de
+carga en apoyo al equipo de
+CoRegistros.
+1 mes PT6.E2 (apoyo)
+PT6.T4 OpWmización de
+algoritmos
+Ajuste fino de los modelos para
+mejorar eficiencia y precisión.
+2 meses PT6.E2 (aportación)
+PT07 — Despliegue y puesta en producción
+PT7.T1 Configuración del
+entorno de producción
+Preparación y ajuste de la
+infraestructura de producción.
+1 mes PT7.E1
+PT7.T2 Despliegue de la
+plataforma
+Instalación y puesta en marcha de la
+plataforma en el entorno producWvo.
+1 mes PT7.E2
+ID Tarea Descripción Periodo (Memoria) Entregable
+Módulo Tecnologías de referencia
+Análisis de facturas (OCR/PLN) Python, FastAPI (micro-API invoice_reader), PaddleOCR, LayoutLMv3, Tesseract, pdfplumber,
+pdf2image, parsing semánWco con LLM, MySQL + SQLAlchemy.
+OpWmización y recomendación FastAPI (servicio /recom/generate), solver MILP (PuLP/Gurobi), aprendizaje contextual
+(contextual bandits, scikit-learn), explicabilidad con SHAP, data lake ClickHouse, fuentes
+CNMC/OMIE/REE-ESIOS.
+Pliego COSPERTA-SUB-01/2026 — Página de4 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+5.2. Metodología, calidad y seguridad
+• Scrum con sprints de 2 a 4 semanas, backlog comparWdo con CoRegistros y entrega de un incremento
+funcional al final de cada sprint.
+• Desarrollo orientado a pruebas (TDD), integración conWnua (CI), control de versiones con Git y revisión de
+código por pares.
+• Privacidad y seguridad desde el diseño: cumplimiento del RGPD, anonimización y vectorización de datos
+personales, cifrado AES-256 en reposo y TLS 1.3 en tránsito, gesWón segura de secretos y control de
+accesos.
+• Validación de modelos con conjuntos de prueba representaWvos y métricas documentadas.
+5.3. ObjeGvos de referencia del proyecto
+La oferta explicará cómo contribuirá a los siguientes objeWvos de la Memoria del Proyecto y cómo se medirán:
+precisión del OCR en campos críWcos ≥ 97 %; F1 del recomendador (matching oferta-perfil) ≥ 0,80; resolución en
+primer contacto del chatbot (FCR) ≥ 70 %; plataforma 100 % en línea y en producción.
+6. Requisitos formales de los entregables y documentación
+Por exigencia de la Convocatoria (Anexo VI.2.c) y de la Guía de Ejecución (§5.3.3), todo entregable, informe o
+documento de soporte deberá permiWr vincularlo inequívocamente al proyecto e incluir, como mínimo:
+• Razón social y NIF del beneficiario: COREGISTROS, S.L.U. — B65146078.
+• Número de expediente: 2025/0325/00287755.
+• Título del proyecto: CoSperta.AI.
+• Los logoWpos exigidos: emblema de la Unión Europea con la referencia a la Unión Europea, la mención
+«Fondo Europeo de Desarrollo Regional» y el logoWpo insWtucional de Red.es.
+Los desarrollos informáWcos se acompañarán de acceso en línea o vídeos demostraWvos, capturas de pantalla y
+guías detalladas de funcionalidades y de uso. La documentación se entregará en castellano; los entregables
+técnicos podrán entregarse en inglés.
+El adjudicatario entregará un informe mensual de acWvidad que relacione los trabajos realizados con las tareas y
+paquetes de trabajo del apartado 4, para garanWzar la trazabilidad entre acWvidades, entregables y facturas.
+7. Plazo de ejecución
+Los trabajos se iniciarán tras la firma del contrato y deberán finalizar, como máximo, el 16/12/2027, conforme a
+la planificación aprobada. Ningún trabajo podrá iniciarse antes de la firma del contrato ni, en su caso, antes de la
+autorización de Red.es prevista en el apartado 12, si fuese el caso. Todos los trabajos deberán ejecutarse dentro
+del periodo de ejecución del proyecto fijado por la Convocatoria.
+Chatbot (PLN/RAG) FastAPI, WhatsApp Business API, LangChain, almacenamiento vectorial FAISS, Transformers
+(Hugging Face), API de OpenAI.
+Dashboard BI (backend) FastAPI, MySQL (transaccional), ClickHouse (analíWca), Redis (caché), endpoints /insights/*.
+Módulo Tecnologías de referencia
+Pliego COSPERTA-SUB-01/2026 — Página de5 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+8. Requisitos de los ofertantes
+8.1. Capacidad técnica
+Los ofertantes deberán acreditar capacidad para desarrollar las tareas solicitadas mediante experiencia en
+proyectos similares (IA aplicada, OCR, NLP, sistemas de recomendación, desarrollo backend y DevOps, etc)
+8.2. Prohibiciones y requisitos legales
+No podrán presentar oferta, ni resultar adjudicatarias, las personas o enWdades en las que concurra alguna de las
+siguientes circunstancias (art. 29.7 LGS; art. 7 de las Bases Reguladoras; Anexo IV de la Convocatoria):
+• Estar incursas en alguna de las prohibiciones del ariculo 13 de la LGS, incluido no estar al corriente de sus
+obligaciones tributarias y con la Seguridad Social.
+• Haber percibido otras subvenciones para la realización de la acWvidad objeto de este contrato.
+• Ser intermediarios o asesores cuyos pagos se definan como un porcentaje del coste total de la operación,
+salvo jusWficación con referencia al valor de mercado.
+• Estar vinculadas con CoRegistros, en los términos del ariculo 42 del Código de Comercio, del ariculo 18
+de la Ley 27/2014 del Impuesto sobre Sociedades y del Plan General de Contabilidad.
+• Estar vinculadas con cualquier otro ofertante de este procedimiento.
+• Haber solicitado ayuda en la Convocatoria C003/25-ED CV6 y no haberla obtenido por no reunir los
+requisitos o no alcanzar la valoración suficiente.
+El adjudicatario deberá cumplir el principio de «no causar un perjuicio significaWvo» al medio ambiente (DNSH),
+conforme al Reglamento (UE) 2020/852.
+Los ofertantes establecidos fuera de España aportarán, cuando se requiera, la documentación equivalente de su
+Estado, acompañada de traducción jurada al castellano.
+9. Contenido obligatorio de la oferta
+Para que sean comparables, las ofertas deberán presentar los mismos conceptos, desglose de precios y duración
+del servicio. Cada oferta incluirá los siguientes documentos:
+A) Oferta económica (presupuesto)
+Conforme al modelo del Anexo I, que reproduce el formato exigido por la Guía de Ejecución (§5.5.2). Deberá
+contener, como mínimo:
+• Datos idenWficaWvos del proveedor (razón social, NIF y datos de contacto) y del cliente (COREGISTROS,
+S.L.U., NIF B65146078).
+• Fecha del presupuesto, que deberá ser anterior al inicio de los trabajos, y firma de la empresa.
+• Referencia literal a la Convocatoria C003/25-ED CV6, al expediente 2025/0325/00287755 y al proyecto
+CoSperta.AI.
+• Concepto de cada actuación, que deberá coincidir con los conceptos de las futuras facturas.
+• Desglose por paquete de trabajo, tarea y perfil: número de horas, coste por hora e importe.
+• Coste total sin impuestos, impuestos indirectos, retención de IRPF solo cuando aplique (autónomos) e
+importe total a pagar.
+• Plazo de validez de la oferta, que no será inferior a 90 días.
+Pliego COSPERTA-SUB-01/2026 — Página de6 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+Si el ofertante es persona .sica o trabajador autónomo, los costes se expresarán siempre por hora, con un coste
+máximo subvencionable de 50 €/hora (Anexo II.3.a de la Convocatoria).
+B) Propuesta técnica (máximo 5 páginas)
+Documento breve, en castellano, con el siguiente contenido mínimo:
+• Comprensión del proyecto y enfoque técnico por paquete de trabajo, coherente con el apartado 4.
+• Metodología de trabajo y control de calidad (máximo 1 página).
+• Planificación por tareas, con hitos y fechas, compaWble con el apartado 7.
+• Equipo propuesto, en formato de tabla, indicando por cada persona: rol o perfil, Wtulación o formación
+relevante, años de experiencia en ese perfil y dedicación esWmada al proyecto. No es necesario aportar los
+CV completos; CoRegistros podrá solicitarlos al ofertante que resulte adjudicatario.
+• Una o dos referencias de proyectos similares (cliente o sector, alcance y año). Basta una descripción breve;
+no se exigen cerWficados de buena ejecución.
+C) Declaración responsable
+Declaración responsable conforme al modelo oficial de Red.es C00325ED_DR_Subcontratación, que se adjunta
+como Anexo II, firmada por el ofertante o su representante con poder suficiente.
+10. Presentación de las ofertas
+• Plazo: hasta el 09/10/2026 a las 23:59 h. No se admiWrán ofertas presentadas fuera de plazo.
+• Forma: por correo electrónico a xcarreras@coregistros.com, enviado desde una cuenta del dominio
+corporaWvo del ofertante. Si la oferta no está firmada electrónicamente, el correo del dominio del
+ofertante que la adjunta servirá para acreditar su autoría (Anexo IV de la Convocatoria).
+• Asunto del correo: «Oferta COSPERTA-SUB-01/2026 – CoSperta.AI – [razón social del ofertante]».
+• Formato: documentos en PDF, firmados, preferentemente con firma y logo, en castellano.
+• Consultas: podrán formularse por escrito hasta el 21/10/2026. Las respuestas se enviarán
+simultáneamente a todos los ofertantes invitados.
+CoRegistros conservará los correos de envío de este pliego y de recepción de cada oferta como prueba
+fehaciente de la fecha de incorporación de cada oferta al proceso de selección. CoRegistros podrá solicitar
+aclaraciones que no supongan modificar la oferta, y podrá excluir las ofertas incompletas o no comparables.
+11. Criterios de valoración
+La selección se realizará conforme a criterios de eficiencia y economía (art. 31.3 LGS). La puntuación máxima es
+de 100 puntos:
+Criterio Puntos Método
+Oferta económica (importe total sin impuestos) 70 Pᵢ = 70 × (oferta más baja /
+oferta i)
+Calidad técnica: enfoque, metodología y planificación 20 Valoración moWvada
+Contribución a los objeWvos de referencia (apartado 5.3) 10 Valoración moWvada
+TOTAL 100
+Pliego COSPERTA-SUB-01/2026 — Página de7 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+Cuando la oferta seleccionada no sea la económicamente más ventajosa, CoRegistros elaborará una memoria
+jusWficaWva de la elección conforme al ariculo 31.3 de la LGS, moWvada en los criterios de esta tabla. En todo
+caso, el precio deberá ajustarse a valores de mercado.
+12. Adjudicación y formalización
+• CoRegistros comunicará el resultado a todos los ofertantes por correo electrónico.
+• El servicio se formalizará mediante contrato escrito que idenWficará las partes, el objeto y alcance
+vinculados a los paquetes de trabajo, la planificación y el coste de cada tarea, los datos de facturación y
+pago, los compromisos y las consecuencias del incumplimiento, la fecha de inicio y la duración (Anexo
+IV.2.f de la Convocatoria).
+• Si el importe adjudicado supera el 20 % del importe de la subvención y, además, 60.000 € (sin impuestos),
+la firma del contrato quedará condicionada a la autorización previa de Red.es (art. 29.3 LGS; art. 7 de las
+Bases Reguladoras). En ese caso, el adjudicatario facilitará en el plazo que se le indique la documentación
+exigida para solicitar la autorización. Si Red.es no autoriza la subcontratación, CoRegistros no quedará
+obligado a contratar y el ofertante no tendrá derecho a indemnización.
+• CoRegistros podrá declarar desierto el procedimiento si ninguna oferta cumple los requisitos o se ajusta a
+precios de mercado.
+13. Condiciones de ejecución, facturación y pago
+13.1. Facturación
+Las facturas se emiWrán conforme al Real Decreto 1619/2012 y al formato de la Guía de Ejecución (§5.5.3).
+Incluirán:
+• Datos del proveedor y del cliente (COREGISTROS, S.L.U., NIF B65146078).
+• Número y fecha de factura.
+• Concepto detallado, con referencia a las tareas y paquetes de trabajo e importes unitarios por elemento.
+• Fechas de inicio y fin de los trabajos facturados.
+• Referencia literal: «Referencia a la Convocatoria de ayudas 2025 desWnadas a proyectos de invesWgación y
+desarrollo en Inteligencia ArWficial y otras tecnologías duales y su integración en las cadenas de valor
+(C003/25-ED CV6)», con el nº de expediente 2025/0325/00287755 y el proyecto CoSperta.AI.
+• Importe, impuestos indirectos, retención de IRPF solo si aplica, e importe total.
+La facturación se vinculará a entregables aceptados por CoRegistros, según los hitos del contrato. No se admiWrá
+el fraccionamiento arWficial de conceptos.
+13.2. Pago
+El pago se realizará exclusivamente mediante transferencia bancaria desde una cuenta de CoRegistros, con el
+número de factura en el concepto, en los plazos de la Ley 3/2004 de medidas de lucha contra la morosidad. Los
+pagos en moneda extranjera se documentarán con el Wpo de cambio aplicado.
+13.3. Propiedad intelectual e industrial
+Todos los resultados (código fuente, modelos, pesos, datasets, documentación y demás entregables) serán de
+Wtularidad exclusiva de CoRegistros desde su creación, con cesión en exclusiva y sin limitación temporal ni
+territorial de los derechos de explotación. El adjudicatario idenWficará en su oferta los componentes de terceros
+o de código abierto y sus licencias, que deberán ser compaWbles con la explotación comercial del proyecto.
+Pliego COSPERTA-SUB-01/2026 — Página de8 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+13.4. Confidencialidad y protección de datos
+El adjudicatario guardará confidencialidad sobre toda la información del proyecto. Cuando acceda a datos
+personales (entre otros, facturas de energía), actuará como encargado del tratamiento y suscribirá el contrato
+previsto en el ariculo 28 del RGPD. Trabajará preferentemente con datos anonimizados y no realizará
+transferencias internacionales de datos sin garanias adecuadas y autorización expresa de CoRegistros.
+13.5. Obligaciones derivadas de la financiación pública
+• Conservar la documentación relaWva a los servicios prestados durante cinco años desde el fin del plazo de
+jusWficación de la ayuda.
+• Colaborar en las actuaciones de comprobación y control de Red.es, de la Intervención General de la
+Administración del Estado, del Tribunal de Cuentas, de la Comisión Europea y de la OLAF, facilitando la
+información que se requiera.
+• Cumplir las obligaciones de información y publicidad FEDER en los entregables y materiales (apartado 6).
+• Firmar, antes de la formalización, la declaración responsable de cumplimiento del ariculo 29 de la LGS y
+del principio DNSH, con el modelo oficial que publique Red.es en su sede electrónica, y autorizar, en su
+caso, la consulta de oficio de sus datos tributarios y de Seguridad Social.
+• No subcontratar a su vez total o parcialmente los servicios sin autorización previa y por escrito de
+CoRegistros.
+• Comunicar a CoRegistros cualquier conflicto de interés, real o potencial, que pudiera surgir durante la
+ejecución.
+En Barcelona, a 22 del 09 de 2026.
+Por COREGISTROS, S.L.U.: Xavier Carreras — CEO
+Pliego COSPERTA-SUB-01/2026 — Página de9 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+ANEXO I — Modelo de presupuesto (oferta económica)
+Formato basado en el modelo de presupuesto previo a la ejecución de la Guía de Ejecución y JusLficación de la
+Convocatoria C003/25-ED CV6 (§5.5.2). El presupuesto se presentará en papel con membrete del ofertante,
+fechado y firmado.
+PROVEEDOR Razón social: [ ]
+NIF: [ ]
+Dirección: [ ]
+Persona de contacto, correo y teléfono: [ ]
+CLIENTE COREGISTROS, S.L.U. — NIF B65146078 — carrer parís, 186 SobreáWco, 08036 Barcelona
+Nº de presupuesto / fecha [nº] — [dd/mm/2026] (anterior al inicio de los trabajos)
+Referencia Referencia a la Convocatoria de ayudas 2025 desWnadas a proyectos de invesWgación y
+desarrollo en Inteligencia ArWficial y otras tecnologías duales y su integración en las
+cadenas de valor (C003/25-ED CV6). Expediente 2025/0325/00287755. Proyecto
+CoSperta.AI. Procedimiento COSPERTA-SUB-01/2026.
+Concepto Servicios de ingeniería de soTware e inteligencia arWficial del proyecto CoSperta.AI
+según el pliego COSPERTA-SUB-01/2026 (el concepto deberá coincidir con el de las
+facturas).
+Plazo de ejecución [fecha de inicio prevista] — [fecha de fin]
+Validez de la oferta 90 días
+PT / Tarea Concepto / actuación Horas Coste/hora (€) Importe (€)
+PT1.T6 Diseño de arquitectura
+PT1.T7 Selección de tecnologías y herramientas
+PT2.T2 Modelos ML para análisis de consumo
+PT2.T3 Módulos NLP para análisis contractual
+PT2.T4 Integración de fuentes de datos
+PT3.T3 Entrenamiento y opWmización OCR
+PT3.T4 Pipeline de extracción de datos
+PT4.T3 Personalización y alertas (backend)
+PT4.T4 Vista agregada asesorías (backend)
+PT5.T2 Motor de diálogo
+PT5.T3 Entrenamiento modelos NLP chatbot
+PT5.T4 Integración chatbot con Core IA
+PT6.T1 Diseño de planes de prueba integrales
+PT6.T3 Apoyo a pruebas de rendimiento
+PT6.T4 OpWmización de algoritmos
+PT7.T1 Configuración entorno de producción
+PT7.T2 Despliegue de la plataforma
+A. Coste total de las actuaciones (impuestos indirectos excluidos)
+B. IVA ([21] %)
+Pliego COSPERTA-SUB-01/2026 — Página de10 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+Fecha: 22/09/2026 Firma y sello: Nombre y cargo del firmante: XXXXXXXXX
+C. Retención IRPF (solo autónomos, si aplica)
+D. IMPORTE TOTAL A PAGAR (A + B − C)
+PT / Tarea Concepto / actuación Horas Coste/hora (€) Importe (€)
+Pliego COSPERTA-SUB-01/2026 — Página de11 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+ANEXO II — Modelo de declaración responsable del ofertante
+DECLARACIÓN RESPONSABLE DEL CUMPLIMIENTO DE
+REQUISITOS PARA SER SUBCONTRATISTA EN LA CONVOCATORIA
+DE AYUDAS C003/25-ED, Y AUTORIZACIÓN A RED.ES PARA
+CONSULTAR DE OFICIO DATOS TRIBUTARIOS Y DE LA SEGURIDAD
+SOCIAL
+Convocatoria de ayudas 2025 destinadas a proyectos de investigación y
+desarrollo en inteligencia artiQicial y otras tecnologías duales y su
+integración en las cadenas de valor, C003/25-ED CV6
+La entidad [_________] con N.I.F. [_________], con domicilio en [_________], Calle/Plaza/Avda.
+[_________], número [_________], código postal [_________], y en su nombre y en calidad de
+representante legal/apoderado/a de la entidad Don/Doña [_________], con D.N.I. [_________], en
+el marco de las actuaciones derivadas de la ejecución de la Convocatoria de ayudas 2025
+destinadas a proyectos de investigación y desarrollo en inteligencia arti7icial y otras tecnologías
+duales y su integración en las cadenas de valor, C003/25-ED CV6, y como entidad subcontratada
+por la entidad beneFiciaria [_________] con N.I.F. [_________],
+DECLARO:
+✓ Que la entidad a la que represento no se encuentra incursa en ninguna de las prohibiciones
+del artı́culo 13.2 de la Ley General de Subvenciones.
+“2. No podrán obtener la condición de bene7iciario o entidad colaboradora de las
+subvenciones reguladas en esta ley las personas o entidades en quienes concurra alguna
+de las circunstancias siguientes, salvo que por la naturaleza de la subvención se exceptúe
+por su normativa reguladora:
+a) Haber sido condenadas mediante sentencia 7irme a la pena de pérdida de la
+posibilidad de obtener subvenciones o ayudas públicas o por delitos de
+prevaricación, cohecho, malversación de caudales públicos, trá7ico de in7luencias,
+fraudes y exacciones ilegales o delitos urbanísticos.
+b) Haber solicitado la declaración de concurso voluntario, haber sido declarados
+insolventes en cualquier procedimiento, hallarse declarados en concurso, salvo que
+en éste haya adquirido la e7icacia un convenio, estar sujetos a intervención judicial
+o haber sido inhabilitados conforme a la Ley 22/2003, de 9 de julio, Concursal, sin
+que haya concluido el período de inhabilitación 7ijado en la sentencia de
+cali7icación del concurso.
+c) Haber dado lugar, por causa de la que hubiesen sido declarados culpables, a la
+resolución 7irme de cualquier contrato celebrado con la Administración.
+d) Estar incursa la persona 7ísica, los administradores de las sociedades
+mercantiles o aquellos que ostenten la representación legal de otras personas
+Pliego COSPERTA-SUB-01/2026 — Página de12 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+jurídicas, en alguno de los supuestos de la Ley 3/2015, de 30 de marzo, reguladora
+del ejercicio del alto cargo de la Administración General del Estado, de la Ley
+53/1984, de 26 de diciembre, de incompatibilidades del Personal al Servicio de las
+Administraciones Públicas, o tratarse de cualquiera de los cargos electivos
+regulados en la Ley Orgánica 5/1985, de 19 de junio, del Régimen Electoral
+General, en los términos establecidos en la misma o en la normativa autonómica
+que regule estas materias.
+e) No hallarse al corriente en el cumplimiento de las obligaciones tributarias o
+frente a la Seguridad Social impuestas por las disposiciones vigentes, en la forma
+que se determine reglamentariamente.
+f) Tener la residencia 7iscal en un país o territorio cali7icado reglamentariamente
+como paraíso 7iscal.
+g) No hallarse al corriente de pago de obligaciones por reintegro de subvenciones
+en los términos que reglamentariamente se determinen.
+h) Haber sido sancionado mediante resolución 7irme con la pérdida de la
+posibilidad de obtener subvenciones conforme a esta u otras leyes que así lo
+establezcan.
+i) No podrán acceder a la condición de bene7iciarios las agrupaciones previstas en
+el artículo 11.3, párrafo segundo cuando concurra alguna de las prohibiciones
+anteriores en cualquiera de sus miembros.
+j) Las prohibiciones de obtener subvenciones afectarán también a aquellas
+empresas de las que, por razón de las personas que las rigen o de otras
+circunstancias, pueda presumirse que son continuación o que derivan, por
+transformación, fusión o sucesión, de otras empresas en las que hubiesen
+concurrido aquéllas.”
+✓ Que la entidad a la que represento, en atención a lo dispuesto en el artı́culo 13.3 bis de la
+Ley General de Subvenciones, en el caso de estar sujeta a la Ley 3/2004, de 29 de
+diciembre, por la que se establecen medidas de lucha contra la morosidad en las
+operaciones comerciales, cumple, en los términos dispuestos en el mencionado apartado,
+los plazos de pago que se establecen en la citada Ley para obtener la condición de
+beneFiciario o entidad colaboradora.
+✓ Que la entidad a la que represento no ha percibido otras subvenciones para la realización
+de la actividad objeto de contratación.
+✓ Que la entidad a la que represento no ha sido seleccionada como beneFiciaria en el marco
+de la presente Convocatoria de Ayudas.
+✓ Que la entidad a la que represento no ha solicitado ayudas en el marco de la presente
+Convocatoria de Ayudas, o no ha resultado beneFiciaria en la misma por no haber
+acreditado correctamente el cumplimiento de los requisitos establecidos.
+✓ Que la entidad a la que represento no tiene vinculación con al entidad beneFiciaria de la
+ayuda.
+Pliego COSPERTA-SUB-01/2026 — Página de13 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+✓ Que la entidad a la que represento tiene capacidad suFiciente para desarrollar las tareas
+objeto de la contratación.
+✓ Al objeto de garantizar la imparcialidad en el presente procedimiento, declara:
+Primero. Estar informado/s de lo siguiente:
+1. Que el artículo 61.3 «Con7licto de intereses», del Reglamento (UE, Euratom) 2018/1046
+del Parlamento Europeo y del Consejo, de 18 de julio (Reglamento 7inanciero de la UE)
+establece que «existirá con7licto de intereses cuando el ejercicio imparcial y objetivo de
+las funciones se vea comprometido por razones familiares, afectivas, de a7inidad política o
+nacional, de interés económico o por cualquier motivo directo o indirecto de interés
+personal.»
+2. Que el artículo 64 «Lucha contra la corrupción y prevención de los con7lictos de
+intereses» de la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, tiene el
+7in de evitar cualquier distorsión de la competencia y garantizar la transparencia en el
+procedimiento y asegurar la igualdad de trato a todos los candidatos y licitadores.
+3. Que el artículo 23 «Abstención», de la Ley 40/2015, de 1 octubre, de Régimen Jurídico
+del Sector Público, establece que deberán abstenerse de intervenir en el procedimiento
+«las autoridades y el personal al servicio de las Administraciones en quienes se den
+algunas de las circunstancias señaladas en el apartado siguiente», siendo éstas:
+a) Tener interés personal en el asunto de que se trate o en otro en cuya
+resolución pudiera in7luir la de aquél; ser administrador de sociedad o entidad
+interesada, o tener cuestión litigiosa pendiente con algún interesado.
+b) Tener un vínculo matrimonial o situación de hecho asimilable y el parentesco
+de consanguinidad dentro del cuarto grado o de a7inidad dentro del segundo, con
+cualquiera de los interesados, con los administradores de entidades o sociedades
+interesadas y también con los asesores, representantes legales o mandatarios que
+intervengan en el procedimiento, así como compartir despacho profesional o estar
+asociado con éstos para el asesoramiento, la representación o el mandato.
+c) Tener amistad íntima o enemistad mani7iesta con alguna de las personas
+mencionadas en el apartado anterior.
+d) Haber intervenido como perito o como testigo en el procedimiento de que se
+trate.
+e) Tener relación de servicio con persona natural o jurídica interesada
+directamente en el asunto, o haberle prestado en los dos últimos años servicios
+profesionales de cualquier tipo y en cualquier circunstancia o lugar».
+Segundo. Que no se encuentra/n incurso/s en ninguna situación que pueda cali7icarse
+de con7licto de intereses de las indicadas en el artículo 61.3 del Reglamento Financiero de
+la UE y que no concurre en su/s persona/s ninguna causa de abstención del artículo 23.2
+de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público que pueda
+afectar al procedimiento de licitación/concesión.
+Tercero. Que se compromete/n a poner en conocimiento del órgano de contratación/
+comisión de evaluación, sin dilación, cualquier situación de con7licto de intereses o causa
+de abstención que dé o pudiera dar lugar a dicho escenario.
+Pliego COSPERTA-SUB-01/2026 — Página de14 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+Cuarto. Conozco que, una declaración de ausencia de con7licto de intereses que se
+demuestre que sea falsa, acarreará las consecuencias disciplinarias/administrativas/
+judiciales que establezca la normativa de aplicación.
+✓ Que, la entidad a la que represento, en virtud de lo dispuesto en el Reglamento (UE)
+2020/852, del Parlamento Europeo y del Consejo, de 18 de junio de 2020, se compromete
+a respetar los principios de economı́a circular y evitar impactos negativos signiFicativos en
+el medio ambiente («DNSH» por sus siglas en inglés «do no signiFicant harm») en la
+ejecución de las actuaciones llevadas a cabo en el marco de dicho Plan, y maniFiesta que
+no incurre en doble Financiación y que, en su caso, no le consta riesgo de incompatibilidad
+con el régimen de ayudas de Estado.
+Pliego COSPERTA-SUB-01/2026 — Página de15 16
+COREGISTROS, S.L.U. (B65146078) · Proyecto CoSperta.AI · Expte. 2025/0325/00287755 · C003/25-ED CV6
+AUTORIZO:
+☒ A Red.es a recabar de oFicio los datos tributarios que sean necesarios para acreditar el
+cumplimiento de los requisitos y obligaciones establecidos en las Bases Reguladoras y en la
+Convocatoria de Ayudas.
+☒ A Red.es a recabar de oFicio los datos de la Seguridad Social que sean necesarios para
+acreditar el cumplimiento de los requisitos y obligaciones establecidos en las Bases
+Reguladoras y en la Convocatoria de Ayudas.
+CONSENTIMIENTO EXPRESO:
+✓ Consiento que la Entidad Pública Empresarial Red.es, con N.I.F. Q2891006E, como
+responsable del tratamiento, procese los datos proporcionados directamente por usted, ası́
+como los obtenidos indirectamente a partir de su actividad, de acuerdo a la Polı́tica de
+Privacidad y a la Instrucción del Director General sobre el Procedimiento para el Ejercicio
+de los Derechos a la Protección de Datos de Carácter Personal (disponible en el siguiente
+enlace: https://www.red.es/es/proteccion-de-datos), y en cumplimiento del Reglamento
+(UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la
+protección de las personas fı́sicas en lo que respecta al tratamiento de datos personales y a
+la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE.
+La presente autorización se otorga exclusivamente a los efectos del reconocimiento,
+seguimiento y control de la subvención o ayuda mencionada anteriormente.
+La autorización concedida por el Firmante puede ser revocada en cualquier momento
+mediante escrito dirigido a Red.es.
+En [_________], a [________],
+[Firma del apoderado]
+Pliego COSPERTA-SUB-01/2026 — Página de16 16

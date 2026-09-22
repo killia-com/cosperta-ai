@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Propuesta Técnica — CoSperta.AI</title>
+  <link rel="stylesheet" href="killia-brand.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <span class="logo-text">Killia</span>
+      <span class="text-small text-muted">Killia Technologies S.L. — B66998592</span>
+    </div>
+    <div class="header-logos">
+      <span class="text-small text-muted">CoRegistros — CoSperta.AI</span>
+    </div>
+  </div>
+
+  <!-- TITLE BLOCK -->
+  <div class="title-block">
+    <h1>Propuesta Técnica</h1>
+    <div class="subtitle">Ingeniería de Software e Inteligencia Artificial — Proyecto CoSperta.AI</div>
+    <div class="ref">COSPERTA-SUB-01/2026 · Exp. 2025/0325/00287755 · C003/25-ED CV6</div>
+  </div>
+
+  <!-- 1. COMPRENSIÓN DEL PROYECTO -->
+  <h2>1. Comprensión del Proyecto</h2>
+
+  <p>CoSperta.AI es una plataforma de consultoría energética digital que analiza facturas y contratos de energía, compara ofertas del mercado y recomienda la opción óptima mediante IA explicable. Está dirigida a hogares, pymes y asesorías energéticas.</p>
+
+  <h3>Enfoque técnico por paquete de trabajo</h3>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>PT01 — Arquitectura</h3>
+      <ul class="clean">
+        <li>Diseño de microservicios con FastAPI</li>
+        <li>Selección de stack: Python, PaddleOCR, LangChain, ClickHouse</li>
+        <li>Seguridad desde el diseño (AES-256, TLS 1.3)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>PT02 — Motor IA (Core)</h3>
+      <ul class="clean">
+        <li>Modelos ML de análisis de consumo (scikit-learn, SHAP)</li>
+        <li>NLP para análisis contractual (Transformers)</li>
+        <li>Integración fuentes CNMC, OMIE, REE-ESIOS</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>PT03 — OCR de Facturas</h3>
+      <ul class="clean">
+        <li>OCR profundo: PaddleOCR + LayoutLMv3</li>
+        <li>Pipeline de extracción automatizado</li>
+        <li>Postprocesado semántico con LLM</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>PT04 — Dashboard BI (Backend)</h3>
+      <ul class="clean">
+        <li>APIs de personalización y alertas</li>
+        <li>Agregación de datos para asesorías</li>
+        <li>ClickHouse analítico + Redis caché</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>PT05 — Chatbot Inteligente</h3>
+      <ul class="clean">
+        <li>Motor conversacional (LangChain + RAG)</li>
+        <li>Integración WhatsApp Business API</li>
+        <li>NLP entrenado en dominio energético</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>PT06-PT07 — Pruebas y Despliegue</h3>
+      <ul class="clean">
+        <li>Planes de prueba integrales (funcional, rendimiento, seguridad)</li>
+        <li>Optimización de modelos (ajuste fino)</li>
+        <li>Despliegue en producción y puesta en marcha</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PAGE BREAK -->
+  <div class="page-break"></div>
+
+  <!-- 2. METODOLOGÍA -->
+  <h2>2. Metodología de Trabajo</h2>
+
+  <div class="highlight">
+    <strong>Diferenciador clave:</strong> Killia no aplica desarrollo tradicional. Utilizamos un enjambre de agentes IA (OpenCode + Hermes) que ejecutan tareas de código, tests y documentación en paralelo, mientras Miquel Colomer supervisa la arquitectura, toma decisiones de diseño y asegura la calidad.
+  </div>
+
+  <h3>Cómo funciona el enjambre</h3>
+
+  <div class="grid-3">
+    <div class="card card-gray">
+      <h3>Agentes de Código</h3>
+      <p class="text-small">Generan implementación Python/FastAPI siguiendo especificaciones. Tests unitarios automáticos.</p>
+    </div>
+    <div class="card card-gray">
+      <h3>Agentes de Validación</h3>
+      <p class="text-small">Ejecutan tests, detectan regresiones, revisan cobertura. CI continuo.</p>
+    </div>
+    <div class="card card-gray">
+      <h3>Supervisión Humana</h3>
+      <p class="text-small">Miquel decide arquitectura, revisa calidad, asegura coherencia con el proyecto.</p>
+    </div>
+  </div>
+
+  <p><strong>Ventajas:</strong> Velocidad 3-5x superior al desarrollo tradicional. Consistencia en patrones de código. Reducción de costes del 40-50% manteniendo calidad.</p>
+
+  <h3>Control de calidad</h3>
+  <ul class="clean">
+    <li>Scrum con sprints de 2-4 semanas, backlog compartido con CoRegistros</li>
+    <li>TDD (desarrollo orientado a pruebas) + integración continua (CI)</li>
+    <li>Control de versiones con Git y revisión de código por pares</li>
+    <li>Validación de modelos con conjuntos de prueba representativos y métricas documentadas</li>
+  </ul>
+
+  <h3>Seguridad y privacidad</h3>
+  <ul class="clean">
+    <li>Cumplimiento RGPD desde el diseño</li>
+    <li>Cifrado AES-256 en reposo y TLS 1.3 en tránsito</li>
+    <li>Anonimización y vectorización de datos personales</li>
+    <li>Gestión segura de secretos y control de accesos</li>
+  </ul>
+
+  <!-- PAGE BREAK -->
+  <div class="page-break"></div>
+
+  <!-- 3. PLANIFICACIÓN -->
+  <h2>3. Planificación</h2>
+
+  <p>Planificación estimada por paquete de trabajo. Los periodos son orientativos y se ajustarán en el primer sprint con CoRegistros.</p>
+
+  <div class="timeline">
+    <div class="timeline-header">Paquete</div>
+    <div class="timeline-header">M1</div>
+    <div class="timeline-header">M2</div>
+    <div class="timeline-header">M3</div>
+    <div class="timeline-header">M4</div>
+    <div class="timeline-header">M5</div>
+    <div class="timeline-header">M6</div>
+    <div class="timeline-header">M7</div>
+    <div class="timeline-header">M8</div>
+    <div class="timeline-header">M9</div>
+    <div class="timeline-header">M10</div>
+    <div class="timeline-header">M11</div>
+    <div class="timeline-header">M12</div>
+
+    <div class="timeline-label">PT01 Arquitectura</div>
+    <div class="timeline-bar" style="grid-column: 2/4;"></div>
+    <div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div>
+
+    <div class="timeline-label">PT02 Core IA</div>
+    <div class="timeline-cell"></div><div class="timeline-cell"></div>
+    <div class="timeline-bar" style="grid-column: 4/7;"></div>
+    <div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div>
+
+    <div class="timeline-label">PT03 OCR</div>
+    <div class="timeline-cell"></div><div class="timeline-cell"></div>
+    <div class="timeline-bar" style="grid-column: 4/7;"></div>
+    <div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div>
+
+    <div class="timeline-label">PT04 Dashboard</div>
+    <div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div>
+    <div class="timeline-bar" style="grid-column: 5/8;"></div>
+    <div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div>
+
+    <div class="timeline-label">PT05 Chatbot</div>
+    <div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div>
+    <div class="timeline-bar" style="grid-column: 5/8;"></div>
+    <div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div>
+
+    <div class="timeline-label">PT06 Pruebas</div>
+    <div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div>
+    <div class="timeline-bar" style="grid-column: 9/11;"></div>
+    <div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div>
+
+    <div class="timeline-label">PT07 Despliegue</div>
+    <div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div><div class="timeline-cell"></div>
+    <div class="timeline-bar" style="grid-column: 11/13;"></div>
+    <div class="timeline-cell"></div>
+  </div>
+
+  <h3>Hitos principales</h3>
+  <ul class="clean">
+    <li><strong>Mes 1-2:</strong> Arquitectura aprobada, stack tecnológico definido</li>
+    <li><strong>Mes 3-6:</strong> Core IA funcional, OCR entrenado, primeros prototipos</li>
+    <li><strong>Mes 5-8:</strong> Dashboard y chatbot integrados</li>
+    <li><strong>Mes 9-10:</strong> Pruebas integrales y optimización</li>
+    <li><strong>Mes 11-12:</strong> Despliegue en producción</li>
+  </ul>
+
+  <!-- PAGE BREAK -->
+  <div class="page-break"></div>
+
+  <!-- 4. EQUIPO -->
+  <h2>4. Equipo Propuesto</h2>
+
+  <table>
+    <tr>
+      <th>Nombre</th>
+      <th>Rol / Perfil</th>
+      <th>Formación</th>
+      <th>Experiencia</th>
+      <th>Dedicación</th>
+    </tr>
+    <tr>
+      <td><strong>Miquel Colomer Salas</strong></td>
+      <td>Director Técnico / Arquitecto de Soluciones IA</td>
+      <td>Universitat de Barcelona</td>
+      <td>15+ años</td>
+      <td>100%</td>
+    </tr>
+  </table>
+
+  <div class="highlight">
+    <strong>Capacidad ampliada por enjambre de agentes IA:</strong> Un solo desarrollador experimentado, potenciado con agentes OpenCode y Hermes, alcanza la productividad de un equipo de 3-4 ingenieros. Los agentes ejecutan código, tests y documentación mientras Miquel supervisa la arquitectura y asegura la calidad.
+  </div>
+
+  <h3>Competencias clave</h3>
+  <div class="grid-2">
+    <div class="card">
+      <h3>Desarrollo Backend</h3>
+      <p class="text-small">Python, FastAPI, APIs REST, microservicios, bases de datos (MySQL, ClickHouse, Redis)</p>
+    </div>
+    <div class="card">
+      <h3>IA y Machine Learning</h3>
+      <p class="text-small">scikit-learn, Transformers, LangChain, RAG, modelos predictivos, NLP</p>
+    </div>
+    <div class="card">
+      <h3>OCR y Procesamiento Documental</h3>
+      <p class="text-small">PaddleOCR, LayoutLMv3, Tesseract, pdfplumber, parsing semántico</p>
+    </div>
+    <div class="card">
+      <h3>Arquitectura y DevOps</h3>
+      <p class="text-small">Microservicios, CI/CD, Docker, Git, TDD, Scrum</p>
+    </div>
+  </div>
+
+  <!-- PAGE BREAK -->
+  <div class="page-break"></div>
+
+  <!-- 5. REFERENCIAS Y OBJETIVOS -->
+  <h2>5. Referencias y Objetivos de Referencia</h2>
+
+  <h3>Referencia 1: uProc.io — Plataforma Integral de Datos</h3>
+  <div class="card">
+    <div class="grid-2">
+      <div>
+        <p class="text-small"><strong>Cliente:</strong> uProc LLC</p>
+        <p class="text-small"><strong>Periodo:</strong> 2013 — presente (11+ años)</p>
+        <p class="text-small"><strong>Alcance:</strong> Desarrollo integral interno multidisciplinar</p>
+      </div>
+      <div>
+        <p class="text-small"><strong>Capacidades:</strong></p>
+        <ul class="clean">
+          <li>OCR y extracción de datos de documentos</li>
+          <li>Modelos IA de procesamiento y clasificación</li>
+          <li>Chatbot y capacidades conversacionales</li>
+          <li>Consultas SQL y gestión de bases de datos</li>
+          <li>Procesamiento de datos a escala</li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-small text-muted mt-0" style="margin-top:8px"><strong>Relevancia:</strong> Mismo alcance técnico que CoSperta.AI (OCR, NLP, chatbot, datos). Desarrollado 100% con enjambre de agentes IA.</p>
+  </div>
+
+  <h3>Referencia 2: Killia — Procesos Operativos con IA</h3>
+  <div class="card">
+    <div class="grid-2">
+      <div>
+        <p class="text-small"><strong>Cliente:</strong> Diversos sectores</p>
+        <p class="text-small"><strong>Periodo:</strong> 2024 — presente</p>
+        <p class="text-small"><strong>Alcance:</strong> Rediseño de procesos con automatización e IA</p>
+      </div>
+      <div>
+        <p class="text-small"><strong>Capacidades:</strong></p>
+        <ul class="clean">
+          <li>Validación documental con excepciones</li>
+          <li>Handoffs entre equipos con trazabilidad</li>
+          <li>Reporting y consolidación operativa</li>
+          <li>Automatización con agentes IA</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h3>Contribución a los objetivos de referencia</h3>
+  <table>
+    <tr>
+      <th>Objetivo</th>
+      <th>Meta</th>
+      <th>Contribución Killia</th>
+    </tr>
+    <tr>
+      <td>Precisión OCR en campos críticos</td>
+      <td>≥ 97%</td>
+      <td>Experiencia en uProc con PaddleOCR + LayoutLMv3. Pipeline de postprocesado semántico.</td>
+    </tr>
+    <tr>
+      <td>F1 del recomendador (matching oferta-perfil)</td>
+      <td>≥ 0,80</td>
+      <td>Modelos ML con scikit-learn. Contextual bandits. Explicabilidad con SHAP.</td>
+    </tr>
+    <tr>
+      <td>Resolución en primer contacto (FCR) del chatbot</td>
+      <td>≥ 70%</td>
+      <td>LangChain + RAG entrenado en dominio energético. Integración WhatsApp Business.</td>
+    </tr>
+    <tr>
+      <td>Plataforma 100% en línea</td>
+      <td>100%</td>
+      <td>Arquitectura de microservicios con FastAPI. Monitorización y CI/CD.</td>
+    </tr>
+  </table>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>Killia Technologies S.L. — B66998592 — CoSperta.AI</span>
+    <span>COSPERTA-SUB-01/2026 · Propuesta Técnica</span>
+  </div>
+
+</body>
+</html>
