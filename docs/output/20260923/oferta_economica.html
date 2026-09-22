@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Oferta Económica — CoSperta.AI</title>
+  <link rel="stylesheet" href="killia-brand.css">
+  <style>
+    .section-ref {
+      font-size: 7.5pt;
+      color: var(--k-muted);
+      background: var(--k-gray);
+      padding: 6px 10px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      font-family: monospace;
+    }
+    .small-table td, .small-table th { padding: 5px 8px; font-size: 8pt; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <img src="data:image/png;base64,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" alt="Killia" style="height:36px;"><span class="logo-text" style="margin-left:8px;">Killia</span>
+      <span class="text-small text-muted">Killia Technologies S.L. — B66998592</span>
+    </div>
+    <div class="header-logos">
+      <span class="text-small text-muted">CoRegistros — CoSperta.AI</span>
+    </div>
+  </div>
+
+  <!-- TITLE BLOCK -->
+  <div class="title-block">
+    <h1>Oferta Económica</h1>
+    <div class="subtitle">Presupuesto de servicios de ingeniería de software e inteligencia artificial</div>
+    <div class="ref">COSPERTA-SUB-01/2026 · Exp. 2025/0325/00287755 · C003/25-ED CV6</div>
+  </div>
+
+  <!-- DATOS IDENTIFICATIVOS -->
+  <div class="section-ref">Referencia a la Convocatoria de ayudas 2025 destinadas a proyectos de investigación y desarrollo en inteligencia artificial y otras tecnologías duales y su integración en las cadenas de valor (C003/25-ED CV6). Expediente 2025/0325/00287755. Proyecto CoSperta.AI. Procedimiento COSPERTA-SUB-01/2026.</div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>Proveedor</h3>
+      <table class="small-table">
+        <tr><td><strong>Razón social</strong></td><td>Killia Technologies S.L.</td></tr>
+        <tr><td><strong>NIF</strong></td><td>B66998592</td></tr>
+        <tr><td><strong>Dirección</strong></td><td>C/ París, 186 Sobreático, 08036 Barcelona</td></tr>
+        <tr><td><strong>Contacto</strong></td><td>Miquel Colomer Salas</td></tr>
+        <tr><td><strong>Email</strong></td><td>hola@killia.com</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3>Cliente</h3>
+      <table class="small-table">
+        <tr><td><strong>Razón social</strong></td><td>COREGISTROS, S.L.U.</td></tr>
+        <tr><td><strong>NIF</strong></td><td>B65146078</td></tr>
+        <tr><td><strong>Dirección</strong></td><td>C/ París, 186 Sobreático, 08036 Barcelona</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-top:10px;">
+    <div class="card card-gray">
+      <table class="small-table">
+        <tr><td><strong>Nº presupuesto</strong></td><td>KIL-2026-001</td></tr>
+        <tr><td><strong>Fecha</strong></td><td>23/09/2026</td></tr>
+      </table>
+    </div>
+    <div class="card card-gray">
+      <table class="small-table">
+        <tr><td><strong>Concepto</strong></td><td>Servicios de ingeniería de software e inteligencia artificial del proyecto CoSperta.AI según el pliego COSPERTA-SUB-01/2026</td></tr>
+        <tr><td><strong>Plazo de ejecución</strong></td><td>16/10/2026 — 16/12/2027</td></tr>
+        <tr><td><strong>Validez de la oferta</strong></td><td>90 días</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- DESGLOSE POR TAREAS -->
+  <h2 style="margin-top:20px;">Desglose de actuaciones</h2>
+
+  <table>
+    <tr>
+      <th>PT / Tarea</th>
+      <th>Concepto / actuación</th>
+      <th style="text-align:right;">Horas</th>
+      <th style="text-align:right;">Coste/hora (€)</th>
+      <th style="text-align:right;">Importe (€)</th>
+    </tr>
+    <tr><td colspan="5" style="background:var(--k-gray);font-weight:700;">PT01 — Arquitectura y tecnologías</td></tr>
+    <tr><td>PT1.T6</td><td>Diseño de arquitectura</td><td style="text-align:right;">60</td><td style="text-align:right;">55,00</td><td style="text-align:right;">3.300,00</td></tr>
+    <tr><td>PT1.T7</td><td>Selección de tecnologías y herramientas</td><td style="text-align:right;">45</td><td style="text-align:right;">55,00</td><td style="text-align:right;">2.475,00</td></tr>
+
+    <tr><td colspan="5" style="background:var(--k-gray);font-weight:700;">PT02 — Motor de procesamiento y análisis de datos (Core IA)</td></tr>
+    <tr><td>PT2.T2</td><td>Modelos ML para análisis de consumo</td><td style="text-align:right;">150</td><td style="text-align:right;">55,00</td><td style="text-align:right;">8.250,00</td></tr>
+    <tr><td>PT2.T3</td><td>Módulos NLP para análisis contractual</td><td style="text-align:right;">150</td><td style="text-align:right;">55,00</td><td style="text-align:right;">8.250,00</td></tr>
+    <tr><td>PT2.T4</td><td>Integración de fuentes de datos</td><td style="text-align:right;">130</td><td style="text-align:right;">55,00</td><td style="text-align:right;">7.150,00</td></tr>
+
+    <tr><td colspan="5" style="background:var(--k-gray);font-weight:700;">PT03 — Plataforma de análisis de facturas (OCR)</td></tr>
+    <tr><td>PT3.T3</td><td>Entrenamiento y optimización OCR</td><td style="text-align:right;">170</td><td style="text-align:right;">55,00</td><td style="text-align:right;">9.350,00</td></tr>
+    <tr><td>PT3.T4</td><td>Pipeline de extracción de datos</td><td style="text-align:right;">145</td><td style="text-align:right;">55,00</td><td style="text-align:right;">7.975,00</td></tr>
+
+    <tr><td colspan="5" style="background:var(--k-gray);font-weight:700;">PT04 — Dashboard de BI (backend)</td></tr>
+    <tr><td>PT4.T3</td><td>Personalización y alertas (backend)</td><td style="text-align:right;">95</td><td style="text-align:right;">55,00</td><td style="text-align:right;">5.225,00</td></tr>
+    <tr><td>PT4.T4</td><td>Vista agregada asesorías (backend)</td><td style="text-align:right;">95</td><td style="text-align:right;">55,00</td><td style="text-align:right;">5.225,00</td></tr>
+
+    <tr><td colspan="5" style="background:var(--k-gray);font-weight:700;">PT05 — Chatbot inteligente</td></tr>
+    <tr><td>PT5.T2</td><td>Motor de diálogo</td><td style="text-align:right;">120</td><td style="text-align:right;">55,00</td><td style="text-align:right;">6.600,00</td></tr>
+    <tr><td>PT5.T3</td><td>Entrenamiento de modelos NLP del chatbot</td><td style="text-align:right;">100</td><td style="text-align:right;">55,00</td><td style="text-align:right;">5.500,00</td></tr>
+    <tr><td>PT5.T4</td><td>Integración del chatbot con el Core IA</td><td style="text-align:right;">75</td><td style="text-align:right;">55,00</td><td style="text-align:right;">4.125,00</td></tr>
+
+    <tr><td colspan="5" style="background:var(--k-gray);font-weight:700;">PT06 — Pruebas integrales y optimización</td></tr>
+    <tr><td>PT6.T1</td><td>Diseño de planes de prueba integrales</td><td style="text-align:right;">45</td><td style="text-align:right;">55,00</td><td style="text-align:right;">2.475,00</td></tr>
+    <tr><td>PT6.T3</td><td>Apoyo a pruebas de rendimiento y escalabilidad</td><td style="text-align:right;">45</td><td style="text-align:right;">55,00</td><td style="text-align:right;">2.475,00</td></tr>
+    <tr><td>PT6.T4</td><td>Optimización de algoritmos</td><td style="text-align:right;">75</td><td style="text-align:right;">55,00</td><td style="text-align:right;">4.125,00</td></tr>
+
+    <tr><td colspan="5" style="background:var(--k-gray);font-weight:700;">PT07 — Despliegue y puesta en producción</td></tr>
+    <tr><td>PT7.T1</td><td>Configuración del entorno de producción</td><td style="text-align:right;">35</td><td style="text-align:right;">55,00</td><td style="text-align:right;">1.925,00</td></tr>
+    <tr><td>PT7.T2</td><td>Despliegue de la plataforma</td><td style="text-align:right;">50</td><td style="text-align:right;">55,00</td><td style="text-align:right;">2.750,00</td></tr>
+
+    <tr class="total-row">
+      <td colspan="2"><strong>TOTAL</strong></td>
+      <td style="text-align:right;"><strong>1.630</strong></td>
+      <td style="text-align:right;"></td>
+      <td style="text-align:right;"><strong>90.000,00</strong></td>
+    </tr>
+  </table>
+
+  <!-- TOTALES -->
+  <div class="grid-2" style="margin-top:16px;">
+    <div></div>
+    <div class="card card-gray">
+      <table class="small-table">
+        <tr><td><strong>A. Coste total (IVA excluido)</strong></td><td style="text-align:right;"><strong>90.000,00 €</strong></td></tr>
+        <tr><td>B. IVA (21%)</td><td style="text-align:right;">18.900,00 €</td></tr>
+        <tr><td>C. Retención IRPF</td><td style="text-align:right;">No aplica (sociedad)</td></tr>
+        <tr style="border-top:2px solid var(--k-black);"><td><strong>D. IMPORTE TOTAL A PAGAR</strong></td><td style="text-align:right;"><strong>108.900,00 €</strong></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- FIRMA -->
+  <div class="signature">
+    <div class="signature-box">
+      <div class="signature-line">
+        <p class="text-small"><strong>Firma y sello</strong></p>
+        <p class="text-small text-muted">Miquel Colomer Salas</p>
+        <p class="text-small text-muted">Gerente — Killia Technologies S.L.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>Killia Technologies S.L. — B66998592 — CoSperta.AI</span>
+    <span>COSPERTA-SUB-01/2026 · Oferta Económica</span>
+  </div>
+
+</body>
+</html>
